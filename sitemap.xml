@@ -3,159 +3,159 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://JiaDingYi.github.io/project/project1/</loc>
+    <loc>https://jiadingyi.github.io/project/project1/</loc>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/project/project2/</loc>
+    <loc>https://jiadingyi.github.io/project/project2/</loc>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/project/project3/</loc>
+    <loc>https://jiadingyi.github.io/project/project3/</loc>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/project/project4/</loc>
+    <loc>https://jiadingyi.github.io/project/project4/</loc>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/post/yumimediationsdk/</loc>
+    <loc>https://jiadingyi.github.io/post/yumimediationsdk/</loc>
     <lastmod>2018-08-17T11:30:51+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/post/creating-a-new-theme/</loc>
+    <loc>https://jiadingyi.github.io/post/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/post/goisforlovers/</loc>
+    <loc>https://jiadingyi.github.io/post/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/post/hugoisforlovers/</loc>
+    <loc>https://jiadingyi.github.io/post/hugoisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/post/migrate-from-jekyll/</loc>
+    <loc>https://jiadingyi.github.io/post/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/tags/bootstrap/</loc>
+    <loc>https://jiadingyi.github.io/tags/bootstrap/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/categories/</loc>
+    <loc>https://jiadingyi.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/tags/css/</loc>
+    <loc>https://jiadingyi.github.io/tags/css/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/tags/development/</loc>
+    <loc>https://jiadingyi.github.io/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/tags/go/</loc>
+    <loc>https://jiadingyi.github.io/tags/go/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/tags/golang/</loc>
+    <loc>https://jiadingyi.github.io/tags/golang/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/tags/highlight-js/</loc>
+    <loc>https://jiadingyi.github.io/tags/highlight-js/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/tags/html/</loc>
+    <loc>https://jiadingyi.github.io/tags/html/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/tags/hugo/</loc>
+    <loc>https://jiadingyi.github.io/tags/hugo/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/tags/jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://JiaDingYi.github.io/tags/js/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://JiaDingYi.github.io/post/</loc>
-    <lastmod>2018-08-17T11:30:51+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://JiaDingYi.github.io/project/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://JiaDingYi.github.io/tags/responsive/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://JiaDingYi.github.io/tags/static-site-generator/</loc>
+    <loc>https://jiadingyi.github.io/tags/jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/tags/syntax-highlighting/</loc>
+    <loc>https://jiadingyi.github.io/tags/js/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/tags/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://JiaDingYi.github.io/tags/template/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://JiaDingYi.github.io/tags/themes/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://JiaDingYi.github.io/</loc>
+    <loc>https://jiadingyi.github.io/post/</loc>
     <lastmod>2018-08-17T11:30:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://JiaDingYi.github.io/tags/yumi/</loc>
+    <loc>https://jiadingyi.github.io/project/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jiadingyi.github.io/tags/responsive/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jiadingyi.github.io/tags/static-site-generator/</loc>
+    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jiadingyi.github.io/tags/syntax-highlighting/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jiadingyi.github.io/tags/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jiadingyi.github.io/tags/template/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jiadingyi.github.io/tags/themes/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jiadingyi.github.io/</loc>
+    <lastmod>2018-08-17T11:30:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jiadingyi.github.io/tags/yumi/</loc>
     <lastmod>2018-08-17T11:30:51+08:00</lastmod>
     <priority>0</priority>
   </url>
