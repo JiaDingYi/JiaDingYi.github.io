@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yumi on Tips</title>
+    <link>http://JiaDingYi.github.io/tags/yumi/</link>
+    <description>Recent content in Yumi on Tips</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Aug 2018 11:30:51 +0800</lastBuildDate>
+    
+	<atom:link href="http://JiaDingYi.github.io/tags/yumi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>YumiMediationSDK</title>
+      <link>http://JiaDingYi.github.io/post/yumimediationsdk/</link>
+      <pubDate>Fri, 17 Aug 2018 11:30:51 +0800</pubDate>
+      
+      <guid>http://JiaDingYi.github.io/post/yumimediationsdk/</guid>
+      <description>[TOC]
+YumiMediationAds API &amp;amp; Delegate &amp;amp; Report YumiMediationSDKBanner API /// The view that displays banner ads. interface YumiMediationBannerView : UIView /// Required to set this banner view to a proper size. Use one of the predefined standard ad sizes (such as kYumiMediationAdViewBanner320x50) If you want to specify the ad size you need to set it before calling loadAd: /// default: iPhone and iPod Touch ad size. Typically 320x50. /// default: iPad ad size.</description>
+    </item>
+    
+  </channel>
+</rss>
