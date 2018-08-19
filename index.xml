@@ -68,10 +68,10 @@ YumiMediationAds API &amp;amp; Delegate &amp;amp; Report YumiMediationSDKBanner 
     
     <item>
       <title>剖析成员变量、实例变量、属性的关系</title>
-      <link>https://jiadingyi.github.io/post/class-%E4%B8%AD%E7%9A%84%E5%B1%9E%E6%80%A7-property/</link>
+      <link>https://jiadingyi.github.io/post/%E5%89%96%E6%9E%90%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E5%AE%9E%E4%BE%8B%E5%8F%98%E9%87%8F%E5%B1%9E%E6%80%A7%E7%9A%84%E5%85%B3%E7%B3%BB/</link>
       <pubDate>Thu, 11 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://jiadingyi.github.io/post/class-%E4%B8%AD%E7%9A%84%E5%B1%9E%E6%80%A7-property/</guid>
+      <guid>https://jiadingyi.github.io/post/%E5%89%96%E6%9E%90%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E5%AE%9E%E4%BE%8B%E5%8F%98%E9%87%8F%E5%B1%9E%E6%80%A7%E7%9A%84%E5%85%B3%E7%B3%BB/</guid>
       <description>在 iOS5 更新之后苹果建议以如下的方式来声明变量:
 @interface MainViewController : UIViewController @property (nonatomic,strong) UIView *snakeView; @end  这也是大多数新手 iOS 程序员最熟悉的方式.但是在阅读许多老手程序员写的代码的时候会疑惑如下这种方式的写法:
 @implementation MainViewController{ UIView *snakeView; } @synthesize snakeView;  下面我将解释一下各种写法的来历.
