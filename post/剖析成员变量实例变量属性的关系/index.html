@@ -195,8 +195,8 @@ UIView*snakeView;
 
 <p>在 .m 中调用 self.snakeView 就是错误的.
 Xcode 会提示你:
-&gt; <img src="./1534659833818.png" alt="Alt text" />
-&gt; <em>将self.snakeView替换为self-&gt;snakeView</em></p>
+<img src="./image/1534659833818.png" alt="Alt text" />
+<em>将self.snakeView替换为self-&gt;snakeView</em></p>
 
 <p>因为 OC 中点语法本质上是调用 setter/getter 方法,而上面的代码中并没有 snakeView 的这个方法.(如果点表达式出现在等号 ＝ 左边，该属性名称的setter方法将被调用。如果点表达式出现在右边，该属性名称的getter方法将被调用).</p>
 

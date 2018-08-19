@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Tips</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Aug 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jiadingyi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,18 +30,9 @@
     </item>
     
     <item>
-      <title>Development</title>
-      <link>https://jiadingyi.github.io/tags/development/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://jiadingyi.github.io/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Go</title>
       <link>https://jiadingyi.github.io/tags/go/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jiadingyi.github.io/tags/go/</guid>
       <description></description>
@@ -50,7 +41,7 @@
     <item>
       <title>Golang</title>
       <link>https://jiadingyi.github.io/tags/golang/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jiadingyi.github.io/tags/golang/</guid>
       <description></description>
@@ -77,18 +68,9 @@
     <item>
       <title>Hugo</title>
       <link>https://jiadingyi.github.io/tags/hugo/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jiadingyi.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jekyll</title>
-      <link>https://jiadingyi.github.io/tags/jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://jiadingyi.github.io/tags/jekyll/</guid>
       <description></description>
     </item>
     
@@ -120,47 +102,11 @@
     </item>
     
     <item>
-      <title>Static Site Generator</title>
-      <link>https://jiadingyi.github.io/tags/static-site-generator/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://jiadingyi.github.io/tags/static-site-generator/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Syntax Highlighting</title>
       <link>https://jiadingyi.github.io/tags/syntax-highlighting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jiadingyi.github.io/tags/syntax-highlighting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Template</title>
-      <link>https://jiadingyi.github.io/tags/template/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://jiadingyi.github.io/tags/template/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Themes</title>
-      <link>https://jiadingyi.github.io/tags/themes/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://jiadingyi.github.io/tags/themes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Yumi</title>
-      <link>https://jiadingyi.github.io/tags/yumi/</link>
-      <pubDate>Fri, 17 Aug 2018 11:30:51 +0800</pubDate>
-      
-      <guid>https://jiadingyi.github.io/tags/yumi/</guid>
       <description></description>
     </item>
     

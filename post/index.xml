@@ -6,29 +6,10 @@
     <description>Recent content in Posts on Tips</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Aug 2018 11:30:51 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 11 Aug 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jiadingyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>YumiMediationSDK</title>
-      <link>https://jiadingyi.github.io/post/yumimediationsdk/</link>
-      <pubDate>Fri, 17 Aug 2018 11:30:51 +0800</pubDate>
-      
-      <guid>https://jiadingyi.github.io/post/yumimediationsdk/</guid>
-      <description>[TOC]
-YumiMediationAds API &amp;amp; Delegate &amp;amp; Report YumiMediationSDKBanner API /// The view that displays banner ads. interface YumiMediationBannerView : UIView /// Required to set this banner view to a proper size. Use one of the predefined standard ad sizes (such as kYumiMediationAdViewBanner320x50) If you want to specify the ad size you need to set it before calling loadAd: /// default: iPhone and iPod Touch ad size. Typically 320x50. /// default: iPad ad size.</description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>https://jiadingyi.github.io/post/test/</link>
-      <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://jiadingyi.github.io/post/test/</guid>
-      <description> test  ddd 22 dd  </description>
-    </item>
     
     <item>
       <title>剖析成员变量、实例变量、属性的关系</title>
@@ -42,51 +23,6 @@ YumiMediationAds API &amp;amp; Delegate &amp;amp; Report YumiMediationSDKBanner 
 Class 中的属性 property 在最初的时候我们必须同时为输出口声明属性和底层实例变量,例如:
 @interface MainViewController : UIViewController{ UIView *snakeView; } @property (nonatomic,strong) UIView *snakeView;  后来苹果将默认编译器从 GCC 转换为 LLVM(low level virtual machine),从此不再需要为属性声明实例变量了.如果 LLVM 发现一个没有匹配实例变量的属性,他将自动创建一个与属性匹配的以下划线为开头的实例变量.也就是我们文章开头所有人都熟悉的写法. 例:
 @interface MainViewController : UIViewController @property (nonatomic,strong) UIView *snakeView; @end  在 MainViewController.m 文件中,编译器会自动生成一个实例变量 _snakeView.那么在 .m 文件中我们就可以直接使用 _snakeView 实例变量,或者通过属性 self.</description>
-    </item>
-    
-    <item>
-      <title>Creating a New Theme</title>
-      <link>https://jiadingyi.github.io/post/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://jiadingyi.github.io/post/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://jiadingyi.github.io/post/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://jiadingyi.github.io/post/goisforlovers/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://jiadingyi.github.io/post/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://jiadingyi.github.io/post/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
-    </item>
-    
-    <item>
-      <title>Migrate from Jekyll</title>
-      <link>https://jiadingyi.github.io/post/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://jiadingyi.github.io/post/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
     </item>
     
   </channel>
