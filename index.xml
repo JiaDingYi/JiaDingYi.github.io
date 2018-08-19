@@ -6,7 +6,7 @@
     <description>Recent content on Tips</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Aug 2018 11:30:51 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jiadingyi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -45,6 +45,16 @@
       
       <guid>https://jiadingyi.github.io/project/project4/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>剖析成员变量、实例变量、属性的关系</title>
+      <link>https://jiadingyi.github.io/post/%E5%89%96%E6%9E%90%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E5%AE%9E%E4%BE%8B%E5%8F%98%E9%87%8F%E5%B1%9E%E6%80%A7%E7%9A%84%E5%85%B3%E7%B3%BB/</link>
+      <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiadingyi.github.io/post/%E5%89%96%E6%9E%90%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E5%AE%9E%E4%BE%8B%E5%8F%98%E9%87%8F%E5%B1%9E%E6%80%A7%E7%9A%84%E5%85%B3%E7%B3%BB/</guid>
+      <description>在 iOS5 更新之后苹果建议以如下的方式来声明变量:
+@interface MainViewController : UIViewController @property (nonatomic,strong) UIView *snakeView; @end  </description>
     </item>
     
     <item>
