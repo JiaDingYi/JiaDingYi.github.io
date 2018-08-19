@@ -194,8 +194,9 @@ UIView*snakeView;
 </code></pre>
 
 <p>在 .m 中调用 self.snakeView 就是错误的.
-Xcode 会提示你:
-<img src="./image/1534659833818.png" alt="Alt text" />
+Xcode 会提示你:</p>
+
+<p><img src="./1534659833818.png" alt="Alt text" />
 <em>将self.snakeView替换为self-&gt;snakeView</em></p>
 
 <p>因为 OC 中点语法本质上是调用 setter/getter 方法,而上面的代码中并没有 snakeView 的这个方法.(如果点表达式出现在等号 ＝ 左边，该属性名称的setter方法将被调用。如果点表达式出现在右边，该属性名称的getter方法将被调用).</p>
@@ -256,11 +257,13 @@ id data;
 
 <p><strong>property 属性, .m 中需要使用 self.propertyVariable 的方式使用 propertyVariable.</strong></p>
 
-<blockquote>
-<p>引用资料：
-<a href="http://www.cnblogs.com/ygm900/p/3660364.html">iOS中属性与成员变量的区别</a>
-<a href="http://blog.sina.com.cn/s/blog_75830d770101g560.html">iOS开发日记-2014.6.20】成员变量、实例变量、属性之间的关系</a></p>
-</blockquote>
+<ul>
+<li><p>引用资料：</p></li>
+
+<li><p><a href="http://www.cnblogs.com/ygm900/p/3660364.html">iOS中属性与成员变量的区别</a></p></li>
+
+<li><p><a href="http://blog.sina.com.cn/s/blog_75830d770101g560.html">iOS开发日记-2014.6.20】成员变量、实例变量、属性之间的关系</a></p></li>
+</ul>
 </div>
 
     
