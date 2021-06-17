@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Swift中的属性</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: green;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://jiadingyi.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Objective-C.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.83.1" />
+        
+
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Swift中的属性</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/project/">Projects</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:wzy2010416033@163.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/JiaDingYi"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/_ThrowException"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/%e6%b3%bd%e6%b0%b8-%e7%8e%8b-3b6749108/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://stackexchange.com/users/7687761/dingyi-jia"><i class="fa fa-stack-overflow"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/swift%E4%B8%AD%E7%9A%84%E5%B1%9E%E6%80%A7/">Swift中的属性</a></h4>
+    <h5>June 17, 2021</h5>
+    
+    <a href="https://jiadingyi.github.iotags/swift"><kbd class="item-tag">swift</kbd></a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify"><ul>
+<li><a href="#swift-%E4%B8%AD%E7%9A%84%E5%B1%9E%E6%80%A7">Swift 中的属性</a>
+<ul>
+<li><a href="#%E5%AE%9E%E4%BE%8B%E5%B1%9E%E6%80%A7">实例属性</a>
+<ul>
+<li><a href="#%E5%AD%98%E5%82%A8%E5%B1%9E%E6%80%A7">存储属性</a></li>
+<li><a href="#%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7">计算属性</a></li>
+<li><a href="#example">Example</a></li>
+<li><a href="#%E6%9E%9A%E4%B8%BE-rawvalue-%E5%8E%9F%E7%90%86">枚举 rawValue 原理</a></li>
+<li><a href="#%E5%BB%B6%E8%BF%9F%E5%AD%98%E5%82%A8%E5%B1%9E%E6%80%A7lazy-stored-property">延迟存储属性（Lazy Stored Property）</a></li>
+<li><a href="#%E5%B1%9E%E6%80%A7%E8%A7%82%E5%AF%9F%E5%99%A8property-observe">属性观察器（Property Observe）</a></li>
+<li><a href="#%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F">全局变量，局部变量</a></li>
+<li><a href="#inout-%E7%9A%84%E5%86%8D%E6%AC%A1%E7%A0%94%E7%A9%B6">inout 的再次研究</a></li>
+</ul>
+</li>
+<li><a href="#%E7%B1%BB%E5%9E%8B%E5%B1%9E%E6%80%A7-type-property">类型属性 （Type Property）</a>
+<ul>
+<li><a href="#%E7%B1%BB%E5%9E%8B%E5%B1%9E%E6%80%A7%E7%BB%86%E8%8A%82">类型属性细节</a></li>
+<li><a href="#%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F">单例模式</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="swift-中的属性">Swift 中的属性</h1>
+<h2 id="实例属性">实例属性</h2>
+<h3 id="存储属性">存储属性</h3>
+<ol>
+<li>类似成员变量的概念</li>
+<li>存储在实例的内存中</li>
+<li>结构体、类可以定义存储属性 ✅</li>
+<li>枚举不可以定义存储属性 ❎</li>
+<li>在创建类或结构体实例的时候，必须为所有实例属性设置一个合适的初始值
+<ol>
+<li>可以在初始化器里为存储属性设置一个初始值</li>
+<li>可以分配一个默认的属性值作为属性定义的一部分</li>
+</ol>
+</li>
+</ol>
+<h3 id="计算属性">计算属性</h3>
+<ol>
+<li>本质就是方法（函数）</li>
+<li>不占用实例的内存</li>
+<li>枚举、结构体、类都可以定义计算属性</li>
+<li>set 传入的新值默认叫做 newValue，也可以自定义
+<ul>
+<li>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Circle</span> {
+    <span style="color:#66d9ef">var</span> radius: Double
+    <span style="color:#66d9ef">var</span> diameter: Double {
+        <span style="color:#66d9ef">set</span> (newDiameter) {
+            radius = newDiameter <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>
+        }
+        <span style="color:#66d9ef">get</span> {
+            radius <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>
+        }
+    }
+}
+</code></pre></div></li>
+</ul>
+</li>
+<li>定义计算属性只能用 var，不能用 let
+<ul>
+<li>let 代表常量，值是一成不变的</li>
+<li>计算属性的值是可能发生变化的（即使是只读计算属性）
+<ul>
+<li>上述例子中的 radius 改变会导致 diameter 变化</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>只读计算属性：只有 get，没有 set
+<ul>
+<li>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Circle</span> {
+    <span style="color:#66d9ef">var</span> radius: Double
+    <span style="color:#66d9ef">var</span> diameter: Double { radius <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span> }
+}
+</code></pre></div></li>
+</ul>
+</li>
+</ol>
+<h3 id="example">Example</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Circle</span> {
+    <span style="color:#75715e">// 存储属性</span>
+    <span style="color:#66d9ef">var</span> radius: Double
+    <span style="color:#75715e">// 计算属性</span>
+    <span style="color:#66d9ef">var</span> diameter: Double {
+        <span style="color:#66d9ef">set</span> {
+            radius = newValue <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>
+        }
+        <span style="color:#66d9ef">get</span> {
+            radius <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>
+        }
+    }
+}
+<span style="color:#66d9ef">var</span> circle = Circle(radius: <span style="color:#ae81ff">5</span>)
+print(circle.radius) <span style="color:#75715e">// 5.0</span>
+print(circle.diameter) <span style="color:#75715e">// 10.0</span>
+circle.diameter = <span style="color:#ae81ff">12</span>
+print(circle.radius) <span style="color:#75715e">// 6.0</span>
+print(circle.diameter) <span style="color:#75715e">// 12.0</span>
+</code></pre></div><h3 id="枚举-rawvalue-原理">枚举 rawValue 原理</h3>
+<ol>
+<li>枚举 rawValue 的本质是只读计算属性
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">enum</span> <span style="color:#a6e22e">TestEnum</span>: Int {
+    <span style="color:#66d9ef">case</span> test1 = <span style="color:#ae81ff">1</span>, test2 = <span style="color:#ae81ff">2</span>, test3 = <span style="color:#ae81ff">3</span>
+    <span style="color:#66d9ef">var</span> rawValue: Int {
+        Switch <span style="color:#66d9ef">Self</span> {
+            <span style="color:#66d9ef">case</span> .test1:
+                 <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">10</span>
+            <span style="color:#66d9ef">case</span> .test2:
+                 <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">11</span>
+            <span style="color:#66d9ef">case</span> .test3:
+                 <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">12</span>
+        }
+    }
+}
+print(TestEnum.test3.rawValue) <span style="color:#75715e">// 12</span>
+</code></pre></div></li>
+</ol>
+<h3 id="延迟存储属性lazy-stored-property">延迟存储属性（Lazy Stored Property）</h3>
+<p>使用 lazy 可以定义一个延迟存储属性，在第一次用到属性的时候才会进行初始化</p>
+<ul>
+<li>lazy 属性必须是 var，不能是 let
+<ul>
+<li>let 必须在实例的初始化方法完成之前就拥有值</li>
+</ul>
+</li>
+<li>如果多条线程同时第一次访问 lazy 属性，无法保证属性只能被初始化一次</li>
+<li>当结构体包含一个延迟存储属性时，只有 var 才能访问延迟存储属性
+<ul>
+<li>因为延迟存储属性初始化时会改变结构体内存</li>
+<li>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Point</span> {
+    <span style="color:#66d9ef">var</span> x = <span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">var</span> y = <span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">lazy</span> <span style="color:#66d9ef">var</span> z = <span style="color:#ae81ff">0</span>
+}
+<span style="color:#66d9ef">let</span> p = Point()
+print(p.z) <span style="color:#75715e">// 报错 cannot use mutating getter or immutable value</span>
+</code></pre></div></li>
+</ul>
+</li>
+</ul>
+<h3 id="属性观察器property-observe">属性观察器（Property Observe）</h3>
+<p>可以为非 lazy 的 var 存储属性设置属性观察器</p>
+<ul>
+<li>willSet 会传递新值，默认叫 newValue</li>
+<li>didSet 会传递旧值，默认叫 oldValue</li>
+<li>在初始化器中设置属性值不会触发 wllSet 和 didSet</li>
+<li>在属性观察器中设置初始值也不会触发 willSet 和 didSet
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Circle</span> {
+    <span style="color:#66d9ef">var</span> radius: Double {
+        <span style="color:#66d9ef">willSet</span> {
+            print(<span style="color:#e6db74">&#34;will set&#34;</span>, newValue)
+        }
+        <span style="color:#66d9ef">didSet</span> {
+            print(<span style="color:#e6db74">&#34;did set&#34;</span>, oldValue, radius)
+        }
+    }
+    <span style="color:#66d9ef">init</span>() {
+        <span style="color:#66d9ef">self</span>.radius = <span style="color:#ae81ff">1.0</span>
+        print(<span style="color:#e6db74">&#34;Circle init&#34;</span>)
+    }
+    <span style="color:#75715e">// Circle init</span>
+    <span style="color:#66d9ef">var</span> circle = Circle()
+
+    <span style="color:#75715e">// will set 10.5</span>
+    <span style="color:#75715e">// did set 1.0 10.5</span>
+    cricle.radius = <span style="color:#ae81ff">10.5</span>
+    <span style="color:#75715e">// 10.5</span>
+    print (circle.radius)
+}
+</code></pre></div></li>
+</ul>
+<h3 id="全局变量局部变量">全局变量，局部变量</h3>
+<p>属性观察器、计算属性功能，同样可以应用在全局变量及局部变量身上</p>
+<h3 id="inout-的再次研究">inout 的再次研究</h3>
+<p>总结：</p>
+<ol>
+<li>inout 的本质就是引用传递（地址传递）</li>
+<li>如果实参有物理内存地址，且没有设置属性观察器
+<ul>
+<li>直接将实参内存地址传入函数（实参进行引用传递）</li>
+</ul>
+</li>
+<li>如果实参是计算属性或者设置了属性观察器
+<ul>
+<li>采用了 copy in copy out 的做法
+<ul>
+<li>调用该函数时，先复制实参的值，产生副本 【get】</li>
+<li>将副本的内存地址传入函数（副本进行引用传递），在函数内部可以修改副本的值</li>
+<li>函数返回后，再将副本的值覆盖实参的值 【set】</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Shape</span> {
+    <span style="color:#66d9ef">var</span> width: Int
+    <span style="color:#66d9ef">var</span> side: Int {
+        <span style="color:#66d9ef">willSet</span> {
+            print(<span style="color:#e6db74">&#34;will set side&#34;</span>, newValue)
+        }
+        <span style="color:#66d9ef">didSet</span> {
+            print(<span style="color:#e6db74">&#34;did set side&#34;</span>, oldValue, side)
+        }
+    }
+    <span style="color:#66d9ef">var</span> girth: Int {
+        <span style="color:#66d9ef">set</span> {
+            width = newValue <span style="color:#f92672">/</span> side
+            print(<span style="color:#e6db74">&#34;set girth&#34;</span>, newValue)
+        }
+        <span style="color:#66d9ef">get</span> {
+            print(<span style="color:#e6db74">&#34;get girth&#34;</span>)
+            <span style="color:#66d9ef">return</span> width <span style="color:#f92672">*</span> side
+        }
+    }
+    <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">show</span>() {
+        print(<span style="color:#e6db74">&#34;width=</span><span style="color:#e6db74">\(</span>width<span style="color:#e6db74">)</span><span style="color:#e6db74">, side=</span><span style="color:#e6db74">\(</span>side<span style="color:#e6db74">)</span><span style="color:#e6db74">, girth=</span><span style="color:#e6db74">\(</span>girth<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
+    }
+}
+
+<span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Test</span> {
+    <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">test</span> (<span style="color:#66d9ef">_</span> num: <span style="color:#66d9ef">inout</span> Int) {
+        num = <span style="color:#ae81ff">20</span>
+    }
+    
+    <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">example</span>() {
+        <span style="color:#66d9ef">var</span> s = Shape(width: <span style="color:#ae81ff">10</span>, side: <span style="color:#ae81ff">4</span>)
+        test(&amp;s.width)
+        s.show()
+        print(<span style="color:#e6db74">&#34;----------&#34;</span>)
+        test(&amp;s.side)
+        s.show()
+        print(<span style="color:#e6db74">&#34;----------&#34;</span>)
+        test(&amp;s.girth)
+        s.show()
+        print(<span style="color:#e6db74">&#34;----------&#34;</span>)
+    }
+}
+
+<span style="color:#66d9ef">var</span> test = Test()
+test.example()
+
+<span style="color:#75715e">// get girth</span>
+<span style="color:#75715e">// width=20, side=4, girth=80</span>
+<span style="color:#75715e">// ----------</span>
+<span style="color:#75715e">// will set side 20</span>
+<span style="color:#75715e">// did set side 4 20</span>
+<span style="color:#75715e">// get girth</span>
+<span style="color:#75715e">// width=20, side=20, girth=400</span>
+<span style="color:#75715e">// ----------</span>
+<span style="color:#75715e">// get girth</span>
+<span style="color:#75715e">// set girth 20</span>
+<span style="color:#75715e">// get girth</span>
+<span style="color:#75715e">// width=1, side=20, girth=20</span>
+<span style="color:#75715e">// ----------</span>
+</code></pre></div><h2 id="类型属性-type-property">类型属性 （Type Property）</h2>
+<p>严格来说，属性可以分为：</p>
+<ul>
+<li>
+<p>实例属性（Instance Property）：只能通过实例去访问</p>
+<ul>
+<li>存储实例属性（Stored Instance Property），存储在实例内存中，每个实例一份</li>
+<li>计算实例属性（Computed Instance Property）</li>
+</ul>
+</li>
+<li>
+<p>类型属性（Type Property）：只能通过类型去访问</p>
+<ul>
+<li>存储类型属性（Stored Type Property）：整个程序运行过程中，就只有一份内存</li>
+<li>计算类型属性（Computed Type Property）</li>
+</ul>
+</li>
+<li>
+<p>可以通过 <code>static</code> 定义类型属性</p>
+</li>
+<li>
+<p>如果是类，也可以用 <code>class</code></p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Car</span> {
+    <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">var</span> count: Int = <span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">init</span>() {
+        Car.count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+    }
+}
+<span style="color:#66d9ef">let</span> c1 = Car()
+<span style="color:#66d9ef">let</span> c2 = Car()
+<span style="color:#66d9ef">let</span> c3 = Car()
+print(Car.count) <span style="color:#75715e">// 3</span>
+</code></pre></div><h3 id="类型属性细节">类型属性细节</h3>
+<ul>
+<li>不同于存储实例属性，你必须给存储类型属性设定初始值
+<ul>
+<li>因为类型没有像实例那样的<code>init()</code>初始化器来初始化存储属性</li>
+</ul>
+</li>
+<li>存储类型属性默认就是 lazy，会在第一次使用时初始化
+<ul>
+<li>就算被多个线程同时访问，保证只初始化一次</li>
+<li>存储类型属性可以是 let</li>
+</ul>
+</li>
+<li>枚举类型也可以定义类型属性（存储类型属性，计算类型属性）</li>
+</ul>
+<h3 id="单例模式">单例模式</h3>
+<p>init 方法要隐藏，避免外部访问</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">FileManager</span> {
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">let</span> shared = FileManager()
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">init</span>() {}
+}
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">FileManager</span> {
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">let</span> shared = {
+        <span style="color:#75715e">// ...</span>
+        <span style="color:#75715e">// ...</span>
+        <span style="color:#66d9ef">return</span> FileManager()
+    }()
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">init</span>() {}
+}
+</code></pre></div></div>
+
+    
+    
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "username" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+

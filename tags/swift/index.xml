@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Tips</title>
-    <link>https://jiadingyi.github.io/post/</link>
-    <description>Recent content in Posts on Tips</description>
+    <title>swift on Tips</title>
+    <link>https://jiadingyi.github.io/tags/swift/</link>
+    <description>Recent content in swift on Tips</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiadingyi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiadingyi.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Swift中的属性</title>
       <link>https://jiadingyi.github.io/post/swift%E4%B8%AD%E7%9A%84%E5%B1%9E%E6%80%A7/</link>

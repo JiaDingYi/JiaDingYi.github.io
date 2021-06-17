@@ -5,7 +5,17 @@
     <link>https://jiadingyi.github.io/tags/</link>
     <description>Recent content in Tags on Tips</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://jiadingyi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiadingyi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>swift</title>
+      <link>https://jiadingyi.github.io/tags/swift/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiadingyi.github.io/tags/swift/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>highlight-js</title>
       <link>https://jiadingyi.github.io/tags/highlight-js/</link>
