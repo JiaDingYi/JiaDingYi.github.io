@@ -168,6 +168,7 @@
 <li><a href="#%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F">单例模式</a></li>
 </ul>
 </li>
+<li><a href="#%E5%8D%8F%E8%AE%AE%E4%B8%AD%E7%9A%84%E5%B1%9E%E6%80%A7">协议中的属性</a></li>
 </ul>
 </li>
 </ul>
@@ -470,7 +471,23 @@ print(Car.count) <span style="color:#75715e">// 3</span>
     }()
     <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">init</span>() {}
 }
-</code></pre></div></div>
+</code></pre></div><h2 id="协议中的属性">协议中的属性</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#66d9ef">protocol</span> <span style="color:#a6e22e">Drawable</span> {
+    <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">draw</span>()
+    <span style="color:#66d9ef">var</span> x: Int {<span style="color:#66d9ef">set</span> <span style="color:#66d9ef">get</span>}
+    <span style="color:#66d9ef">var</span> y: Int {<span style="color:#66d9ef">get</span>}
+    <span style="color:#66d9ef">subscript</span>(index: Int) -&gt; Int {<span style="color:#66d9ef">get</span> <span style="color:#66d9ef">set</span>}
+}
+</code></pre></div><ol>
+<li>协议中定义的属性必须使用 var 关键字</li>
+<li>实现协议时的属性权限要不小于协议中定义的属性权限
+<ul>
+<li>协议中规定get、set，用var存储属性或者set，get计算属性实现</li>
+<li>协议中定义get，用任何属性都可以实现</li>
+</ul>
+</li>
+</ol>
+</div>
 
     
     
