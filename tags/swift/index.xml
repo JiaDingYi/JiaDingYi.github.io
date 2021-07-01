@@ -6,7 +6,18 @@
     <description>Recent content in swift on Tips</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiadingyi.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jiadingyi.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Swift利用协议实现前缀功能</title>
+      <link>https://jiadingyi.github.io/post/swift%E5%88%A9%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%AE%9E%E7%8E%B0%E5%89%8D%E7%BC%80%E5%8A%9F%E8%83%BD/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiadingyi.github.io/post/swift%E5%88%A9%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%AE%9E%E7%8E%B0%E5%89%8D%E7%BC%80%E5%8A%9F%E8%83%BD/</guid>
+      <description>Swift利用协议实现前缀功能  想要实现的功能 存在的问题 解决方案  属性前增加前缀（不优雅） 点语法增加前缀  一、持有属性方式 二、使用范型  给String扩充类型方法   三、利用协议实现前缀        Swift利用协议实现前缀功能 想要实现的功能 计算字符串中数字的个数
+var greeting = &amp;#34;1234-Hello, playground-1234&amp;#34; extension String { var numberCount: Int { var number = 0 for c in self where (&amp;#34;0&amp;#34;...&amp;#34;9&amp;#34;).contains(c){ number += 1 } return number } } print(greeting.numberCount) 存在的问题 直接给一个类增加扩展，容易导致冲突。
+解决方案 属性前增加前缀（不优雅） var greeting = &amp;#34;1234-Hello, playground-1234&amp;#34; extension String { var zy_numberCount: Int { var number = 0 for c in self where (&amp;#34;0&amp;#34;.</description>
+    </item>
+    
     <item>
       <title>Swift中的属性</title>
       <link>https://jiadingyi.github.io/post/swift%E4%B8%AD%E7%9A%84%E5%B1%9E%E6%80%A7/</link>
